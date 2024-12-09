@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pley</title>
+    <link rel="stylesheet" href= "ghjs.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="kod">kod</span>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="container big-text">examples</a></li>
+                    <li><a href="#">task</a></li>
+                    <li><a href="#">results</a></li>
+                    <li class="bat"><a href="#">contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero container">
+            <div class="hero--info">
+                <h2>Изучение</h2>
+                <h1>Программирования и базовой электроники </h1>
+                <p>для дитей и подростков от 12 до 16 лет, в формате игры </p>
+                <button class="btn">Начать</button>
+            </div>
+            <img src="rb_2148818123.png" alt="">
+        </div>
+
+        <div class=" container trending">
+            <a href="#" class="see-all">SEE ALL</a>
+            <h3>Топовые языки Программирования</h3>
+            <div class="language">
+                <div class="block">
+                    <img src="Js.jpeg" alt="">
+                    <span><img src="" alt="">12 million users</span>
+                </div>
+                <div class="block">
+                    <img src="Pyton.png" alt="">
+                    <span><img src="" alt="">10 million users</span>
+                </div>
+                <div class="block">
+                    <img src="Java.jpeg" alt="">
+                    <span><img src="" alt="">9 million users</span>
+                </div>
+                <div class="block">
+                    <img src="ССС.jpg" alt="">
+                    <span><img src="" alt="">6 million users</span>
+                </div>
+            </div>
+        </div>
+        <div class="container blok1">
+                <h1>Основы Python</h1>
+        <div class="container">
+                <h2>Арифметические операторы</h2>
+                <ul>
+                    <li>Сложение: <code>+</code></li>
+                    <li>Вычитание: <code>-</code></li>
+                    <li>Умножение: <code>*</code></li>
+                    <li>Деление: <code>/</code></li>
+                    <li>Целочисленное деление: <code>//</code></li>
+                    <li>Остаток от деления: <code>%</code></li>
+                    <li>Возведение в степень: <code>**</code></li>
+                </ul>
+        
+                <h2>Сравнительные операторы</h2>
+                <ul>
+                    <li>Равно: <code>==</code></li>
+                    <li>Не равно: <code>!=</code></li>
+                    <li>Больше: <code>></code></li>
+                    <li>Меньше: <code><</code></li>
+                    <li>Больше или равно: <code>>=</code></li>
+                    <li>Меньше или равно: <code><=</code></li>
+                </ul>
+        
+                <h2>Базовые функции</h2>
+                <ul>
+                    <li><code>print()</code> - выводит текст на экран</li>
+                    <li><code>len()</code> - возвращает длину объекта</li>
+                    <li><code>type()</code> - возвращает тип объекта</li>
+                    <li><code>input()</code> - получает ввод от пользователя</li>
+                </ul>
+        
+                <h2>Основные библиотеки</h2>
+                <ul>
+                    <li><code>math</code> - математические функции</li>
+                    <li><code>random</code> - генерация случайных чисел</li>
+                    <li><code>datetime</code> - работа с датами и временем</li>
+                    <li><code>os</code> - взаимодействие с операционной системой</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css.css">
+    <title>Интерактивные задания по Python</title>
+    <div class="tezt-1"></div>
+    <h1>Изучение основ Python</h1>
+    
+    <div id="tasks-container">
+        <div class="task" id="task1">
+            <h2>Задание 1</h2>
+            <p>Напишите код, который выводит "Hello, World!"</p>
+            <textarea id="user-input-1" placeholder="Ваш код здесь..."></textarea>
+            <button onclick="checkTask(1)">Проверить</button>
+            <p class="result" id="result-1"></p>
+        </div>
+
+        <div class="task" id="task2">
+            <h2>Задание 2</h2>
+            <p>Напишите функцию, которая считает квадрат числа.</p>
+            <textarea id="user-input-2" placeholder="Ваш код здесь..."></textarea>
+            <button onclick="checkTask(2)">Проверить</button>
+            <p class="result" id="result-2"></p>
+        </div>
+
+        <div class="task" id="task3">
+            <h2>Задание 3</h2>
+            <p>Напишите программу, которая находит максимальное число из трех.</p>
+            <textarea id="user-input-3" placeholder="Ваш код здесь..."></textarea>
+            <button onclick="checkTask(3)">Проверить</button>
+            <p class="result" id="result-3"></p>
+        </div>
+    </div>
+
+    <button id="calculate-score" onclick="calculateScore()">Посчитать оценки</button>
+    <canvas id="score-chart" width="400" height="200"></canvas>
+
+    <script src="Js.js"></script>
+</body>
+
+</html>
